@@ -29,9 +29,19 @@ import tesla from './company/tesla.png';
 import carrent from './carrent.png';
 import jobit from './jobit.png';
 import tripguide from './tripguide.png';
+import metaverseSite from './metaverse-site.png';
+import customShirtSite from './custom-shirt-site.png';
+import imageGallery from './image-gallery-site.png';
+import sass from './sass.png';
+import profitappLogo from './profitapp-logo.ico';
 
 export {
+  metaverseSite,
+  customShirtSite,
+  imageGallery,
   logo,
+  sass,
+  profitappLogo,
   backend,
   creator,
   mobile,

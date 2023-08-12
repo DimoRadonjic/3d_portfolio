@@ -1,7 +1,7 @@
 import {
-  mobile,
-  backend,
-  creator,
+  // mobile,
+  // backend,
+  // creator,
   web,
   javascript,
   typescript,
@@ -10,19 +10,14 @@ import {
   reactjs,
   redux,
   tailwind,
-  nodejs,
   mongodb,
   git,
-  figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  profitappLogo,
   threejs,
+  sass,
+  customShirtSite,
+  imageGallery,
+  metaverseSite,
 } from '../assets';
 
 export const navLinks = [
@@ -42,21 +37,21 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Web Developer',
+    title: 'React Developer',
     icon: web,
   },
-  {
-    title: 'React Native Developer',
-    icon: mobile,
-  },
-  {
-    title: 'Backend Developer',
-    icon: backend,
-  },
-  {
-    title: 'Content Creator',
-    icon: creator,
-  },
+  // {
+  //   title: 'React Native Developer',
+  //   icon: mobile,
+  // },
+  // {
+  //   title: 'Backend Developer',
+  //   icon: backend,
+  // },
+  // {
+  //   title: 'Content Creator',
+  //   icon: creator,
+  // },
 ];
 
 const technologies = [
@@ -89,9 +84,13 @@ const technologies = [
     icon: tailwind,
   },
   {
-    name: 'Node JS',
-    icon: nodejs,
+    name: 'SASS',
+    icon: sass,
   },
+  // {
+  //   name: 'Node JS',
+  //   icon: nodejs,
+  // },
   {
     name: 'MongoDB',
     icon: mongodb,
@@ -104,69 +103,69 @@ const technologies = [
     name: 'git',
     icon: git,
   },
-  {
-    name: 'figma',
-    icon: figma,
-  },
-  {
-    name: 'docker',
-    icon: docker,
-  },
+  // {
+  //   name: 'figma',
+  //   icon: figma,
+  // },
+  // {
+  //   name: 'docker',
+  //   icon: docker,
+  // },
 ];
 
 const experiences = [
   {
     title: 'React.js Developer',
-    company_name: 'Starbucks',
-    icon: starbucks,
+    company_name: 'ProfitApp',
+    icon: profitappLogo,
     iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
+    date: 'Sept 2022 - Present',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
+      'Developing and maintaining web applications using React.js',
       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
       'Implementing responsive design and ensuring cross-browser compatibility.',
       'Participating in code reviews and providing constructive feedback to other developers.',
     ],
   },
-  {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
-    icon: tesla,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2021 - Feb 2022',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-  {
-    title: 'Web Developer',
-    company_name: 'Shopify',
-    icon: shopify,
-    iconBg: '#383E56',
-    date: 'Jan 2022 - Jan 2023',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
-  {
-    title: 'Full stack Developer',
-    company_name: 'Meta',
-    icon: meta,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2023 - Present',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
-    ],
-  },
+  // {
+  //   title: 'React Native Developer',
+  //   company_name: 'Tesla',
+  //   icon: tesla,
+  //   iconBg: '#E6DEDD',
+  //   date: 'Jan 2021 - Feb 2022',
+  //   points: [
+  //     'Developing and maintaining web applications using React.js and other related technologies.',
+  //     'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+  //     'Implementing responsive design and ensuring cross-browser compatibility.',
+  //     'Participating in code reviews and providing constructive feedback to other developers.',
+  //   ],
+  // },
+  // {
+  //   title: 'Web Developer',
+  //   company_name: 'Shopify',
+  //   icon: shopify,
+  //   iconBg: '#383E56',
+  //   date: 'Jan 2022 - Jan 2023',
+  //   points: [
+  //     'Developing and maintaining web applications using React.js and other related technologies.',
+  //     'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+  //     'Implementing responsive design and ensuring cross-browser compatibility.',
+  //     'Participating in code reviews and providing constructive feedback to other developers.',
+  //   ],
+  // },
+  // {
+  //   title: 'Full stack Developer',
+  //   company_name: 'Meta',
+  //   icon: meta,
+  //   iconBg: '#E6DEDD',
+  //   date: 'Jan 2023 - Present',
+  //   points: [
+  //     'Developing and maintaining web applications using React.js and other related technologies.',
+  //     'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
+  //     'Implementing responsive design and ensuring cross-browser compatibility.',
+  //     'Participating in code reviews and providing constructive feedback to other developers.',
+  //   ],
+  // },
 ];
 
 const testimonials = [
@@ -198,9 +197,31 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'Custom Shirt Creation ThreeJS Project',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'Website where users can easily design personalized shirts. Choose colors, upload logos or images, and even experiment with AI-generated images to create a shirt that reflects your unique style.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'javascript',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: customShirtSite,
+    site_link: 'https://custom-shirt-creation.netlify.app',
+    source_code_link: 'https://github.com/DimoRadonjic/threejs_ai_project',
+  },
+  {
+    name: 'AI Images Showcase',
+    description:
+      "Website where users can bring their ideas to life. Simply input your name and provide a prompt for the AI to work its magic. Watch as the AI generates stunning images tailored to your input. Share your creations with the community, allowing visitors to witness the art you've conjured and the prompts that inspired it.",
     tags: [
       {
         name: 'react',
@@ -211,54 +232,40 @@ const projects = [
         color: 'green-text-gradient',
       },
       {
+        name: 'netlify-serverless',
+        color: 'pink-text-gradient',
+      },
+      {
         name: 'tailwind',
         color: 'pink-text-gradient',
       },
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/',
+    image: imageGallery,
+    site_link: 'https://image-generation-gallery.netlify.app',
+    source_code_link:
+      'https://github.com/DimoRadonjic/project_ai_mern_image_generation',
   },
   {
-    name: 'Job IT',
+    name: 'Metaverse',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'restapi',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'scss',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: jobit,
-    source_code_link: 'https://github.com/',
-  },
-  {
-    name: 'Trip Guide',
-    description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      "Discover METAVERUS: Your portal to an extraordinary metaverse experience. Immerse yourself in virtual realms that transcend reality, brought to life through VR technology. Select your desired destination, effortlessly enter, and unlock boundless exploration. Stay updated on new worlds, connect with friends, and gain insights into the metaverse's evolving impact. METAVERUS is your gateway to a captivating digital frontier where imagination knows no limits.",
     tags: [
       {
         name: 'nextjs',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'typescript',
         color: 'green-text-gradient',
       },
       {
-        name: 'css',
+        name: 'tailwind',
         color: 'pink-text-gradient',
       },
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/',
+    image: metaverseSite,
+    site_link: 'https://metaverse-next-ts.netlify.app',
+    source_code_link: 'https://github.com/DimoRadonjic/metaverse_next_ts',
   },
 ];
 
