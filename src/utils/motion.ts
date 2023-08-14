@@ -90,8 +90,8 @@ export const slideIn = (
 };
 
 export const staggerContainer = (
-  staggerChildren: any,
-  delayChildren: any
+  staggerChildren?: any,
+  delayChildren?: any
 ): Variants => {
   return {
     hidden: {},
