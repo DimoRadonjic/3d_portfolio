@@ -18,6 +18,7 @@ import {
   customShirtSite,
   imageGallery,
   metaverseSite,
+  memoryGame,
 } from '../assets';
 
 export const navLinks = [
@@ -286,7 +287,7 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: metaverseSite,
+    image: memoryGame,
     site_link: 'https://memory-game-dr.netlify.app/',
     source_code_link: 'https://github.com/DimoRadonjic/Memory-app',
   },
