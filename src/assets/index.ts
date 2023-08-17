@@ -34,9 +34,11 @@ import customShirtSite from './custom-shirt-site.png';
 import imageGallery from './image-gallery-site.png';
 import sass from './sass.png';
 import profitappLogo from './profitapp-logo.ico';
+import memoryGame from './memory-game.png';
 
 export {
   metaverseSite,
+  memoryGame,
   customShirtSite,
   imageGallery,
   logo,
