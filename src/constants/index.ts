@@ -120,7 +120,7 @@ const experiences = [
     company_name: 'ProfitApp',
     icon: profitappLogo,
     iconBg: '#383E56',
-    date: 'Sept 2022 - Present',
+    date: 'Sept 2022 - Avg 2023',
     points: [
       'Developing and maintaining web applications using React.js',
       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
