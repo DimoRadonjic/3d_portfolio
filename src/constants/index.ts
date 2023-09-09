@@ -18,7 +18,6 @@ import {
   customShirtSite,
   imageGallery,
   metaverseSite,
-  memoryGame,
 } from '../assets';
 
 export const navLinks = [
