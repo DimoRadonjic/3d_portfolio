@@ -269,28 +269,28 @@ const projects = [
     source_code_link: 'https://github.com/DimoRadonjic/metaverse_next_ts',
   },
 
-  {
-    name: 'Magic Match',
-    description:
-      'Welcome to our memory-testing platform! Put your memory to the test as you engage with our captivating game, matching pairs of cards and honing your recall abilities.',
-    tags: [
-      {
-        name: 'react',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'javascript',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: memoryGame,
-    site_link: 'https://memory-game-dr.netlify.app/',
-    source_code_link: 'https://github.com/DimoRadonjic/Memory-app',
-  },
+  // {
+  //   name: 'Magic Match',
+  //   description:
+  //     'Welcome to our memory-testing platform! Put your memory to the test as you engage with our captivating game, matching pairs of cards and honing your recall abilities.',
+  //   tags: [
+  //     {
+  //       name: 'react',
+  //       color: 'blue-text-gradient',
+  //     },
+  //     {
+  //       name: 'javascript',
+  //       color: 'green-text-gradient',
+  //     },
+  //     {
+  //       name: 'css',
+  //       color: 'pink-text-gradient',
+  //     },
+  //   ],
+  //   image: memoryGame,
+  //   site_link: 'https://memory-game-dr.netlify.app/',
+  //   source_code_link: 'https://github.com/DimoRadonjic/Memory-app',
+  // },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
