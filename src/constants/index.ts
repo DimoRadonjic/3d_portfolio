@@ -120,7 +120,7 @@ const experiences = [
     company_name: "ProfitApp",
     icon: profitappLogo,
     iconBg: "#383E56",
-    date: "Sept 2021 - Sept 2022",
+    date: "May 2022 - August 2023",
     points: [
       "Developing and maintaining web applications using React.js",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -133,7 +133,7 @@ const experiences = [
     company_name: "Acme",
     icon: acmeLogo,
     iconBg: "#383E56",
-    date: "Oct 2022 - Oct 2023",
+    date: "September 2023 - June 2024",
     points: [
       "Developing a dynamic information system using React, Redux, Tailwind CSS, Axios, and Typescript.",
       "Implementing a responsive table that dynamically adapts to backend changes for optimal user experience.",
