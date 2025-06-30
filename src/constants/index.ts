@@ -19,6 +19,7 @@ import {
   imageGallery,
   metaverseSite,
   acmeLogo,
+  flekaLogo,
 } from "../assets";
 
 export const navLinks = [
@@ -133,13 +134,28 @@ const experiences = [
     company_name: "Acme",
     icon: acmeLogo,
     iconBg: "#383E56",
-    date: "September 2023 - June 2024",
+    date: "September 2023 - September 2024",
     points: [
       "Developing a dynamic information system using React, Redux, Tailwind CSS, Axios, and Typescript.",
       "Implementing a responsive table that dynamically adapts to backend changes for optimal user experience.",
       "Enabling users to download data in Excel (XLSX), PDF, and DOCX formats for versatile document exports.",
       "Facilitating seamless image uploads to enhance the comprehensive storage of employee data.",
       "Incorporating user authentication",
+    ],
+  },
+
+  {
+    title: "Frontend Developer",
+    company_name: "Fleka",
+    icon: flekaLogo,
+    iconBg: "#383E56",
+    date: "January 2025 - July 2025",
+    points: [
+      "Worked on both legacy and new Angular-based web applications.",
+      "Improved application performance through codebase refactoring and optimization.",
+      "Collaborated closely with design and backend teams to implement new features.",
+      "Enhanced SEO and API efficiency across multiple projects.",
+      "Applied advanced performance techniques: lazy loading, tree shaking, asset minification, responsive image optimization, and OnPush change detection.",
     ],
   },
   // {
@@ -198,6 +214,40 @@ const testimonials = [
 ];
 
 const projects = [
+  {
+    name: "Food Waste Reduction E-commerce Platform (MVP)",
+    description:
+      "Developed a sustainability-focused e-commerce platform (MVP) connecting buyers,sellers, and logistics providers, featuring real-time inventory management and integrated payment systems. Utilized Next.js with React & TypeScript for server-side rendering and automatic SEO optimization, while Go microservices handled concurrent marketplace transactions and real-time data synchronization with superior memory efficiency. Delivered the production-ready MVP independently, architecting complex multi-vendor dashboards  , dynamic pricing systems, and seamless payment gateway integrations.  The platform's intuitive interface and robust performance exceeded client expectations.Additionally, created a comprehensive admin panel with advanced reporting capabilities and user management systems.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tanstack query",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "golang",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: "",
+    site_link: "",
+    source_code_link: "",
+  },
   {
     name: "Custom Shirt Creation ThreeJS Project",
     description:

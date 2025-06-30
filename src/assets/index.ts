@@ -36,9 +36,11 @@ import sass from "./sass.png";
 import profitappLogo from "./profitapp-logo.ico";
 import memoryGame from "./memory-game.png";
 import acmeLogo from "./company/acmeLogo.png";
+import flekaLogo from "./fleka_logo.svg";
 
 export {
   metaverseSite,
+  flekaLogo,
   acmeLogo,
   memoryGame,
   customShirtSite,
