@@ -34,12 +34,23 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (loading) return;
+
+    const serviceId = import.meta.env.VITE_APP_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY;
+    if (!serviceId || !templateId || !publicKey) {
+      console.error('EmailJS environment variables are missing.');
+      alert('The contact form is unavailable right now. Please email me directly.');
+      return;
+    }
+
     setLoading(true);
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        serviceId,
+        templateId,
         {
           from_name: form.name,
           to_name: 'Dimitrije Radonjic',
@@ -47,7 +58,7 @@ const Contact = () => {
           to_email: 'dimo.radonjic2112@gmail.com',
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        publicKey
       )
       .then(
         () => {
@@ -90,6 +101,9 @@ const Contact = () => {
             <input
               type='text'
               name='name'
+              required
+              maxLength={100}
+              autoComplete='name'
               value={form.name}
               onChange={handleChange}
               placeholder="What's your name?"
@@ -101,6 +115,9 @@ const Contact = () => {
             <input
               type='email'
               name='email'
+              required
+              maxLength={200}
+              autoComplete='email'
               value={form.email}
               onChange={handleChange}
               placeholder="What's your email address?"
@@ -112,6 +129,8 @@ const Contact = () => {
             <textarea
               rows={7}
               name='message'
+              required
+              maxLength={5000}
               value={form.message}
               onChange={handleChange}
               placeholder='What you want to say?'
@@ -121,7 +140,8 @@ const Contact = () => {
 
           <button
             type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            disabled={loading}
+            className='bg-tertiary disabled:opacity-60 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
           >
             {loading ? 'Sending...' : 'Send'}
           </button>
