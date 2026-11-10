@@ -7,7 +7,6 @@ import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-import { Link } from "react-router-dom";
 
 interface ProjectCardProps {
   index: number;
@@ -49,9 +48,10 @@ const ProjectCard = ({
             <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
               <div className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
                 {source_code_link && (
-                  <Link
-                    to={source_code_link}
+                  <a
+                    href={source_code_link}
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="w-full h-full place-content-center"
                   >
                     <img
@@ -59,7 +59,7 @@ const ProjectCard = ({
                       alt="source code"
                       className="w-full h-full object-contain"
                     />
-                  </Link>
+                  </a>
                 )}
               </div>
             </div>
@@ -86,11 +86,11 @@ const ProjectCard = ({
           ))}
         </div>
         {site_link && (
-          <Link to={site_link} target="_blank">
+          <a href={site_link} target="_blank" rel="noopener noreferrer">
             <div className="mt-4 w-full text-center h-full text-secondary text-[15px]">
               Click to visit
             </div>
-          </Link>
+          </a>
         )}
       </Tilt>
     </motion.div>

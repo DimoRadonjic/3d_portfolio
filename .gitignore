@@ -25,3 +25,11 @@ dist-ssr
 
 # Local Netlify folder
 .netlify
+
+# Vite temp config bundles
+vite.config.ts.timestamp-*.mjs
+
+# Local env files
+.env
+.env.*
+!.env.example
