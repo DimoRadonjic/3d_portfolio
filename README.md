@@ -1,27 +1,32 @@
-# React + TypeScript + Vite
+# Dimitrije Radonjić, 3D portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio site built with React, TypeScript, Vite, Tailwind CSS and react-three-fiber.
 
-Currently, two official plugins are available:
+## Scripts
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- `npm run dev`: dev server on http://localhost:3333
+- `npm run build`: type-check and build to `dist/`
+- `npm run lint`: ESLint
+- `npm run preview`: serve the production build locally
 
-## Expanding the ESLint configuration
+## Deploy (Cloudflare Workers)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The built `dist/` folder is served by Cloudflare Workers static assets. `wrangler.jsonc` points at `dist/` and falls back to `index.html` for unknown routes; `public/_headers` sets the security headers.
 
-- Configure the top-level `parserOptions` property like this:
+Preview the production build on the Workers runtime:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+```bash
+npm run build
+npx wrangler dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Deploys run through Workers Builds on every push to `main`:
+
+1. Cloudflare dashboard → Workers & Pages → Create → Import a repository → pick `DimoRadonjic/3d_portfolio`.
+2. Build command: `npm run build`. Deploy command: `npx wrangler deploy`.
+3. Add the EmailJS build variables (see below).
+4. Optional custom domain: the Worker → Settings → Domains & Routes → Add → Custom domain.
+
+Manual deploy: `npm run build && npx wrangler deploy`.
+
+The contact form reads `VITE_APP_EMAILJS_SERVICE_ID`, `VITE_APP_EMAILJS_TEMPLATE_ID` and `VITE_APP_EMAILJS_PUBLIC_KEY` at build time. Add them in the Worker → Settings → Build → Variables and secrets (the same values as on the current host), otherwise the form can't send.
