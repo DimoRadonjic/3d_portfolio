@@ -53,19 +53,12 @@ const About = () => {
         variants={fadeIn('', '', 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        {/* I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life! */}
-        I'm a versatile frontend developer proficient in TypeScript, JavaScript,
-        React, SASS, CSS, and HTML. With a strong command of GIT and GitHub, I
-        specialize in crafting captivating user interfaces using React, while my
-        skills in SASS and CSS allow me to design visually appealing layouts.
-        Beyond the code, I thrive on collaboration, working closely with clients
-        to architect efficient, scalable, and user-friendly solutions that
-        tackle real-world challenges. Let's partner up and transform your
-        concepts into impactful digital experiences! 🚀
+        Frontend engineer with 4+ years of commercial experience across React,
+        Vue 3 and Angular, all with TypeScript. Recent work covers a Vue 3 HR
+        platform, Angular performance and version upgrades for agency clients,
+        and React and Next.js apps before that. Usually the only frontend
+        developer on the team, so I own a feature from the first component to
+        production and settle API details directly with backend and design.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

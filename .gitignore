@@ -33,3 +33,6 @@ vite.config.ts.timestamp-*.mjs
 .env
 .env.*
 !.env.example
+
+# cloudflare
+.wrangler
