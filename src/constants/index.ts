@@ -17,7 +17,7 @@ import {
   sass,
   customShirtSite,
   imageGallery,
-  metaverseSite,
+  kotorCableCar,
   acmeLogo,
   flekaLogo,
 } from "../assets";
@@ -240,52 +240,83 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Prezla, e-commerce MVP",
+    name: "Employee Lifecycle Platform",
     description:
-      "E-commerce MVP built for a client during freelance work. I built the whole Next.js/React frontend alone: vendor dashboards, pricing screens and checkout with payment gateway integration. Private repository.",
+      "Internal HR platform used company-wide by the client's HR staff: employee records, contracts, leave tracking and documents behind a configurable multi-step approval workflow. Only frontend engineer on a team of three. Client work under NDA.",
     tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tanstack query",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "vue", color: "blue-text-gradient" },
+      { name: "typescript", color: "green-text-gradient" },
+      { name: "quasar", color: "pink-text-gradient" },
+      { name: "pinia", color: "blue-text-gradient" },
     ],
     image: "",
     site_link: "",
     source_code_link: "",
   },
   {
-    name: "Custom Shirt Creation ThreeJS Project",
+    name: "Prezla, e-commerce MVP",
     description:
-      "Website where users can easily design personalized shirts. Choose colors, upload logos or images, and even experiment with AI-generated images to create a shirt that reflects your unique style.",
+      "E-commerce MVP built for a client during freelance work. I built the whole Next.js/React frontend alone: vendor dashboards, pricing screens and checkout with payment gateway integration. Private repository.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "javascript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "nextjs", color: "blue-text-gradient" },
+      { name: "react", color: "green-text-gradient" },
+      { name: "tanstack query", color: "pink-text-gradient" },
+      { name: "typescript", color: "blue-text-gradient" },
+      { name: "tailwind", color: "green-text-gradient" },
+    ],
+    image: "",
+    site_link: "",
+    source_code_link: "",
+  },
+  {
+    name: "Document Generation Engine",
+    description:
+      "Module of the same HR platform that turns form and template data into Word and PDF files, inside a file-explorer-style document manager with folders and drag-and-drop upload. Client work under NDA.",
+    tags: [
+      { name: "vue", color: "blue-text-gradient" },
+      { name: "typescript", color: "green-text-gradient" },
+      { name: "quasar", color: "pink-text-gradient" },
+    ],
+    image: "",
+    site_link: "",
+    source_code_link: "",
+  },
+  {
+    name: "Kadrovska",
+    description:
+      "HR information system built at Acme in React, Redux, Tailwind CSS and TypeScript: a data table that adapts to backend schema changes, exports to Excel, PDF and DOCX, and image upload for employee records.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "redux", color: "green-text-gradient" },
+      { name: "tailwind", color: "pink-text-gradient" },
+      { name: "typescript", color: "blue-text-gradient" },
+    ],
+    image: "",
+    site_link: "",
+    source_code_link: "",
+  },
+  {
+    name: "Kotor Cable Car",
+    description:
+      "Public site for the Kotor Cable Car with live status, tickets and visitor info, built at Fleka on Angular with load time and SEO as the main constraints.",
+    tags: [
+      { name: "angular", color: "blue-text-gradient" },
+      { name: "typescript", color: "green-text-gradient" },
+      { name: "seo", color: "pink-text-gradient" },
+    ],
+    image: kotorCableCar,
+    site_link: "https://kotorcablecar.me",
+    source_code_link: "",
+  },
+  {
+    name: "Custom Shirt Creator",
+    description:
+      "Real-time 3D shirt designer: pick colors, upload a logo, or generate an image with AI and apply it straight onto the model.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "javascript", color: "green-text-gradient" },
+      { name: "threejs", color: "pink-text-gradient" },
+      { name: "tailwind", color: "blue-text-gradient" },
     ],
     image: customShirtSite,
     site_link: "https://custom-shirt-creation.netlify.app",
@@ -294,75 +325,17 @@ const projects = [
   {
     name: "AI Images Showcase",
     description:
-      "Website where users can bring their ideas to life. Simply input your name and provide a prompt for the AI to work its magic. Watch as the AI generates stunning images tailored to your input. Share your creations with the community, allowing visitors to witness the art you've conjured and the prompts that inspired it.",
+      "Type a name and a prompt, generate an image, and share it to a public feed that shows both the image and the prompt behind it.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "netlify-serverless",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "mongodb", color: "green-text-gradient" },
+      { name: "netlify-serverless", color: "pink-text-gradient" },
+      { name: "tailwind", color: "blue-text-gradient" },
     ],
     image: imageGallery,
     site_link: "https://image-generation-gallery.netlify.app",
-    source_code_link:
-      "https://github.com/DimoRadonjic/project_ai_mern_image_generation",
+    source_code_link: "https://github.com/DimoRadonjic/project_ai_mern_image_generation",
   },
-  {
-    name: "Metaverse",
-    description:
-      "Discover METAVERUS: Your portal to an extraordinary metaverse experience. Immerse yourself in virtual realms that transcend reality, brought to life through VR technology. Select your desired destination, effortlessly enter, and unlock boundless exploration. Stay updated on new worlds, connect with friends, and gain insights into the metaverse's evolving impact. METAVERUS is your gateway to a captivating digital frontier where imagination knows no limits.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: metaverseSite,
-    site_link: "https://metaverse-next-ts.netlify.app",
-    source_code_link: "https://github.com/DimoRadonjic/metaverse_next_ts",
-  },
-
-  // {
-  //   name: 'Magic Match',
-  //   description:
-  //     'Welcome to our memory-testing platform! Put your memory to the test as you engage with our captivating game, matching pairs of cards and honing your recall abilities.',
-  //   tags: [
-  //     {
-  //       name: 'react',
-  //       color: 'blue-text-gradient',
-  //     },
-  //     {
-  //       name: 'javascript',
-  //       color: 'green-text-gradient',
-  //     },
-  //     {
-  //       name: 'css',
-  //       color: 'pink-text-gradient',
-  //     },
-  //   ],
-  //   image: memoryGame,
-  //   site_link: 'https://memory-game-dr.netlify.app/',
-  //   source_code_link: 'https://github.com/DimoRadonjic/Memory-app',
-  // },
 ];
 
 export { services, technologies, experiences, testimonials, projects };

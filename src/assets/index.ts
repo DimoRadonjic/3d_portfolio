@@ -29,7 +29,7 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-import metaverseSite from "./metaverse-site.png";
+import kotorCableCar from "./kotor-cable-car.png";
 import customShirtSite from "./custom-shirt-site.png";
 import imageGallery from "./image-gallery-site.png";
 import sass from "./sass.png";
@@ -39,7 +39,7 @@ import acmeLogo from "./company/acmeLogo.png";
 import flekaLogo from "./fleka_logo.svg";
 
 export {
-  metaverseSite,
+  kotorCableCar,
   flekaLogo,
   acmeLogo,
   memoryGame,
